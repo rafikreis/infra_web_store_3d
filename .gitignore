@@ -1,0 +1,51 @@
+# ==========================================
+# Terraform Runtime & State Files
+# ==========================================
+
+# Ignore local state files (stored safely in S3)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Ignore local Terraform execution logs
+*.log
+
+# Crash dumps
+crash.log
+crash.*.log
+
+
+# ==========================================
+# Terraform Local Directory & Plugins
+# ==========================================
+
+# Local plugin directory created by `terraform init`
+.terraform/
+
+# ==========================================
+# Environment Variables & Secret Files
+# ==========================================
+
+# Variable definitions containing sensitive credentials
+*.tfvars
+*.tfvars.json
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+
+# ==========================================
+# System & IDE Configuration Files
+# ==========================================
+
+# VS Code settings
+.vscode/
+
+# Optional: allow selected VS Code configuration files
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
